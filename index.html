@@ -30,6 +30,26 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.github-link {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.project-card:hover .github-link {
+    transform: scale(1.05);
+    color: #c1005a;
+}
+
+
+
+
 .profile-pic:hover {
     transform: scale(1.05);
 }
@@ -163,7 +183,14 @@
         .project-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+            
         }
+        
+         .project-card h3:hover {
+           color: #c1005a;
+            
+        }
+
 
         .project-card h3 {
             color: white;
@@ -249,7 +276,9 @@
 
     <div class="navbar">
         <a href="#skills">Skills</a>
+          <a href="#app">BCFA App</a>
         <a href="#projects">Projects</a>
+        
         <a href="#contact">Get in Touch</a>
     </div>
 
@@ -284,6 +313,35 @@ My expertise includes Adobe Workfront integration, Fusion-based automation, cust
                 <span class="badge">Technical Documentation</span>
             </div>
         </div>
+        
+        <div id="app" class="section">
+<div class="content"> <h2>BCFA App</h2>
+        <h3>Blueprint Custom Field Analyzer | Workfront Fusion Companion</h3>
+ <br>
+        BCFA is a macOS application designed to simplify Workfront Fusion blueprint analysis. 
+        It scans JSON blueprint files, identifies custom fields, tracks occurrences across modules, 
+        and highlights shared fields—helping you optimize and troubleshoot automations with ease.
+    </br>
+    <br>
+    <h4>🔍 Key Features:</h4>
+    <ul>
+        <li>Analyze Workfront Fusion blueprints instantly</li>
+        <li>Identify custom fields and their usage</li>
+        <li>Generate clear, structured reports</li>
+    </ul>
+
+    <p>
+        <strong>Download BCFA and streamline your Fusion workflow today.</strong>
+    </p><br>
+
+<div class="project-card">
+    <a href="https://github.com/PanShahbazian/BCFA/tree/main" target="_blank" class="github-link">Get it on GitHub</a>
+</div>
+
+  
+    
+    </div>
+    </div>
 
         <div id="projects" class="section">
             <h2>Projects</h2>
@@ -384,13 +442,15 @@ The information stored in the AWS S3 bucket was subsequently forwarded to a 3D m
 
             </div>
         </div>
-    </div>
+    
 
     <div id="contact" class="contact">
+      <img src="https://i.ibb.co/xvySkZY/LOGO.png" alt="Logo" class="profile-pic">
         <h2>Get in Touch</h2>
         <p><a href="mailto:me@panshahbazi.com">Email</a></p>
         <p><a href="https://www.linkedin.com/in/pan-shahbazian/">LinkedIn</a></p>
          <p><a href="https://experienceleaguecommunities.adobe.com/t5/user/viewprofilepage/user-id/13341335">Experience League Community</a></p> 
+         <p><a href="https://github.com/PanShahbazian">GitHub</a></p> 
     </div>
 
     <div class="modal" id="modal">
