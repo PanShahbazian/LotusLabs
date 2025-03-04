@@ -59,24 +59,31 @@
 }
 
 
-        body {
-            background: linear-gradient(135deg, #c1005a, #01257a);
-            color: white;
-            overflow-x: hidden;
-            position: relative;
-        }
+    
 
-        /* Background Overlay */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: -1;
-        }
+body {
+  background:
+    /* Base gradient (your two brand colors) */
+    linear-gradient(135deg, #c1005a, #01257a),
+    /* Overlay gradient (black at partial alpha) */
+    linear-gradient(
+      to bottom,
+      
+      
+      rgba(0, 0, 0, 0.2) 3%,    /* Lighter at top */
+      rgba(0, 0, 0, 0.2) 50%,   /* Same halfway down */
+      rgba(0, 0, 0, 0.4) 100%   /* Darker at bottom */
+    );
+  background-blend-mode: darken; 
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #c1005a; /* Fallback color */
+}
+
+
+
+        
 
         /* Navbar */
         .navbar {
@@ -450,7 +457,7 @@ The information stored in the AWS S3 bucket was subsequently forwarded to a 3D m
         <p><a href="mailto:me@panshahbazi.com">Email</a></p>
         <p><a href="https://www.linkedin.com/in/pan-shahbazian/">LinkedIn</a></p>
          <p><a href="https://experienceleaguecommunities.adobe.com/t5/user/viewprofilepage/user-id/13341335">Experience League Community</a></p> 
-         <p><a href="https://github.com/PanShahbazian">GitHub</a></p> 
+         <p><a href="https://experienceleaguecommunities.adobe.com/t5/user/viewprofilepage/user-id/13341335">GitHub</a></p> 
     </div>
 
     <div class="modal" id="modal">
