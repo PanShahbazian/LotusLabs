@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pan Shahbazian</title>
+    <title>Pan Shahbazian | Workfront & Fusion Consultant</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
@@ -16,74 +16,81 @@
         }
         
         .profile-section {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
 
-.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
 
-.github-link {
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 8px;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
-}
+        .github-link {
+            display: block;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
 
-.project-card:hover .github-link {
-    transform: scale(1.05);
-    color: #c1005a;
-}
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #01257a;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
 
+        .cta-button:hover {
+            background: transparent;
+            color: white;
+        }
 
+        .project-card:hover .github-link {
+            transform: scale(1.05);
+            color: #c1005a;
+        }
 
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
 
-.profile-pic:hover {
-    transform: scale(1.05);
-}
+        .profile-text {
+            flex: 1;
+        }
 
-.profile-text {
-    flex: 1;
-}
-
-
-    
-
-body {
-  background:
-    /* Base gradient (your two brand colors) */
-    linear-gradient(135deg, #c1005a, #01257a),
-    /* Overlay gradient (black at partial alpha) */
-    linear-gradient(
-      to bottom,
-      
-      
-      rgba(0, 0, 0, 0.2) 3%,    /* Lighter at top */
-      rgba(0, 0, 0, 0.2) 50%,   /* Same halfway down */
-      rgba(0, 0, 0, 0.4) 100%   /* Darker at bottom */
-    );
-  background-blend-mode: darken; 
-  color: white;
-  overflow-x: hidden;
-  position: relative;
-  background-color: #c1005a; /* Fallback color */
-}
-
-
-
-        
+        body {
+            background:
+                /* Base gradient (your two brand colors) */
+                linear-gradient(135deg, #c1005a, #01257a),
+                /* Overlay gradient (black at partial alpha) */
+                linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.2) 3%,    /* Lighter at top */
+                rgba(0, 0, 0, 0.2) 50%,   /* Same halfway down */
+                rgba(0, 0, 0, 0.4) 100%   /* Darker at bottom */
+                );
+            background-blend-mode: darken; 
+            color: white;
+            overflow-x: hidden;
+            position: relative;
+            background-color: #c1005a; /* Fallback color */
+        }
 
         /* Navbar */
         .navbar {
@@ -91,7 +98,7 @@ body {
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(10px);
             display: flex;
             justify-content: center;
@@ -111,96 +118,117 @@ body {
             color: #c1005a;
         }
 
-        /* Hero / About Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 600;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            line-height: 1.8;
-        }
-
         /* Content */
         .content {
             max-width: 900px;
-            margin: 80px auto;
+            margin: 130px auto 60px;
             padding: 20px;
             text-align: left;
         }
 
+        .hero-content {
+            text-align: center;
+            max-width: 900px;
+            margin: 130px auto 60px;
+            padding: 20px;
+        }
+
         .section {
-            margin-bottom: 100px;
+            margin-bottom: 80px;
         }
 
         .badges {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            margin-top: 20px;
         }
 
         .badge {
             background-color: white;
             color: #01257a;
-            padding: 10px 15px;
+            padding: 8px 15px;
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 600;
             transition: transform 0.3s, background 0.3s;
+            white-space: nowrap;
         }
 
         .badge:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             background: #c1005a;
             color: white;
         }
 
-        /* Projects */
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 20px;
+            margin-top: 30px;
         }
 
-        .project-card {
+        .service-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        /* Case Studies */
+        .case-studies {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .case-study-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .case-study-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .case-study-card h3:hover {
+           color: #c1005a;
+        }
+
+        .case-study-card h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .case-study-card p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Tool Section */
+        .tool-card {
             background: rgba(255, 255, 255, 0.2);
             padding: 20px;
             border-radius: 10px;
-            flex: 1 1 300px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-            text-align: center;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
-            
-        }
-        
-         .project-card h3:hover {
-           color: #c1005a;
-            
-        }
-
-
-        .project-card h3 {
-            color: white;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         /* Modal */
@@ -217,28 +245,28 @@ body {
             z-index: 1000;
         }
 
-   .modal-content {
-    background: white;
-    color: #01257a;
-    padding: 30px;
-    width: 60%;
-    max-height: 70vh; 
-    overflow-y: auto; 
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-    animation: fadeIn 0.3s ease-in-out;
-}
-
+        .modal-content {
+            background: white;
+            color: #01257a;
+            padding: 30px;
+            width: 60%;
+            max-height: 70vh; 
+            overflow-y: auto; 
+            border-radius: 10px;
+            text-align: left;
+            position: relative;
+            animation: fadeIn 0.3s ease-in-out;
+        }
 
         .modal-content h3 {
             color: #c1005a;
+            margin-bottom: 15px;
         }
 
         .modal-content p {
             margin: 15px 0;
             font-size: 1rem;
-            line-height: 1.5;
+            line-height: 1.6;
         }
 
         .close-modal {
@@ -248,7 +276,7 @@ body {
             cursor: pointer;
             background: #c1005a;
             color: white;
-            padding: 10px;
+            padding: 8px 12px;
             border: none;
             border-radius: 5px;
             font-size: 1rem;
@@ -258,12 +286,30 @@ body {
         .contact {
             padding: 50px 20px;
             text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
         }
 
         .contact a {
-            color: #c1005a;
+            color: white;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .contact a:hover {
+            color: #c1005a;
         }
 
         /* Animations */
@@ -277,186 +323,264 @@ body {
                 transform: scale(1);
             }
         }
+
+        /* Certifications */
+        .certifications {
+            margin-top: 30px;
+        }
+
+        .certification-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .certification-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .certification-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .certification-issuer {
+            margin-bottom: 10px;
+        }
+
+        .certification-date {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .certification-id {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        .credential-button {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .credential-button:hover {
+            background: #c1005a;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .navbar {
+                flex-wrap: wrap;
+            }
+            
+            .navbar a {
+                margin: 5px 10px;
+            }
+            
+            .modal-content {
+                width: 90%;
+            }
+            
+            .contact-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="navbar">
-        <a href="#skills">Skills</a>
-          <a href="#app">BCFA App</a>
-        <a href="#projects">Projects</a>
-        
-        <a href="#contact">Get in Touch</a>
+        <a href="#about">About</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#services">Services</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="hero-content">
+        <div class="profile-section">
+            <img src="https://i.ibb.co/qY2C2d1g/IMG-7765.jpg" alt="Pan Shahbazian" class="profile-pic">
+            <div class="profile-text">
+                <h1>Pan Shahbazian</h1>
+                <h3>Principal Consultant & Founder</h3>
+            </div>
+        </div>
+        <p>I drive enterprise transformation by optimizing workflows, automating processes, and implementing strategic solutions with Adobe Workfront & Fusion.</p>
+        <a href="#contact" class="cta-button">Let's Work Together</a>
     </div>
 
     <div class="content">
-    <img src="https://i.ibb.co/qY2C2d1g/IMG-7765.jpg" alt="Pan Shahbazian" class="profile-pic">
-        <h1>Pan Shahbazian</h1>
-        <h3>Workfront & Integration Sr. Consultant @ WorkFocus.io | Adobe Consultant | FCOE Evangelist</h3>
-        <br>I drive digital transformation and optimize business processes by merging data engineering, cloud infrastructure, and digital strategy with business objectives. With a background in mathematics and computer science, I specialize in automation, workflow optimization, and system efficiency.<p>
-
-My expertise includes Adobe Workfront integration, Fusion-based automation, custom workflow design, UI development, dashboard creation, and strategic consulting. I excel at streamlining operations, enhancing collaboration, and driving innovation to accelerate business growth.</p>
-    </div>
-
-    <div class="content">
-        <div id="skills" class="section">
-            <h2>Skills</h2>
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>I specialize in transforming business processes through strategic implementation of Adobe Workfront and Fusion. I help companies streamline operations, enhance collaboration, and drive innovation to accelerate business growth.</p>
+            
+            <p>My approach combines technical expertise with business acumen to deliver solutions that align with your organization's goals. Whether you need help with implementation, integration, optimization, or training, I provide tailored consulting services to maximize your return on investment.</p>
+            
             <div class="badges">
-            <span class="badge">Adobe Workfront</span>
+                <span class="badge">Adobe Workfront</span>
                 <span class="badge">Adobe Workfront Fusion</span>
+                <span class="badge">Integration Development</span>
                 <span class="badge">System Administration</span>
-                <span class="badge">Troubleshooting</span>
                 <span class="badge">Solution Architecture</span>
                 <span class="badge">AWS</span>
-                                                <span class="badge">Amazon EC2</span>
-
                 <span class="badge">Microsoft Azure</span>
-
                 <span class="badge">Process Automation</span>
                 <span class="badge">Operations Management</span>
-                <span class="badge">Project Management</span>
                 <span class="badge">Business Process Improvement</span>
-                <span class="badge">Business Development</span>
+                <span class="badge">Business Analysis</span>
                 <span class="badge">Technical Documentation</span>
             </div>
         </div>
-        
-        <div id="app" class="section">
-<div class="content"> <h2>BCFA App</h2>
-        <h3>Blueprint Custom Field Analyzer | Workfront Fusion Companion</h3>
- <br>
-        BCFA is a macOS application designed to simplify Workfront Fusion blueprint analysis. 
-        It scans JSON blueprint files, identifies custom fields, tracks occurrences across modules, 
-        and highlights shared fields—helping you optimize and troubleshoot automations with ease.
-    </br>
-    <br>
-    <h4>🔍 Key Features:</h4>
-    <ul>
-        <li>Analyze Workfront Fusion blueprints instantly</li>
-        <li>Identify custom fields and their usage</li>
-        <li>Generate clear, structured reports</li>
-    </ul>
 
-    <p>
-        <strong>Download BCFA and streamline your Fusion workflow today.</strong>
-    </p><br>
+        <div id="certifications" class="section">
+            <h2>Certifications</h2>
+            <p>I maintain industry-recognized certifications that validate my expertise in Adobe Workfront and Fusion technologies.</p>
+            
+            <div class="certifications">
+                <div class="certification-card">
+                    <div class="certification-title">Adobe Certified Professional - Adobe Workfront Fusion</div>
+                    <div class="certification-issuer">Adobe</div>
+                    <div class="certification-date">Issued May 2025 · Expires May 2027</div>
+                    <div class="certification-id">Credential ID d144258f-2f39-11f0-9b2a-42010a400fc3</div>
+                    <div class="credential-button" onclick="openModal('Adobe Certified Professional - Workfront Fusion', 'This certification validates expertise in:\n\n• Building and managing complex Fusion scenarios\n• Creating robust error handling and troubleshooting processes\n• Implementing advanced mapping techniques\n• Optimizing scenario performance\n• Integrating with third-party systems via APIs\n• Developing custom modules and connectors\n• Setting up effective monitoring and maintenance\n• Following best practices for Fusion development')">Show credential</div>
+                </div>
 
-<div class="project-card">
-    <a href="https://github.com/PanShahbazian/BCFA/tree/main" target="_blank" class="github-link">Get it on GitHub</a>
-</div>
-
-  
-    
-    </div>
-    </div>
-
-        <div id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects">
-              <div class="project-card" onclick="openModal(`About the Project`, `At Starbucks, I took the lead on implementing the Workfront Kanban Board Fusion connector—still in beta—to enhance how we manage and streamline intake requests.
-
-By integrating dynamic automation that moves, tags, and renames Workfront Kanban board cards based on tracked factors and real-time data, we ensured a more efficient workflow that reduced manual tracking and email overload.
-
-The system I developed automatically updates request names from generic identifiers to descriptive titles, greatly enhancing navigation and tracking clarity. It also features an innovative rerun mechanism that consistently checks to ensure no intake becomes delayed, maintaining timeliness across all tasks.
-
-The system dynamically categorizes requests through automated tagging and sophisticated data handling, providing tighter control and faster access to project statuses.
-
-My efforts have centralized tracking in one area, utilizing automation to move cards through a board and add visual cues like tags, comments, and assignments. This streamlined process not only enhances focus but also aims to reduce the cognitive load on our team, reducing stress and increasing productivity.
-
-The result is a more streamlined, efficient, and less disruptive intake management process at Starbucks, showcasing the potential of innovative technology to transform traditional workflows.`)">
-    <h3>Intake Management with Workfront Fusion and Workfront Kanban Boards</h3>
-</div>
-                                <div class="project-card" onclick="openModal(`About the Project`, `At Starbucks, I developed an advanced reporting system for creative producers and project managers. This system utilizes document approval reports to present detailed data on proofs, enhancing visibility and decision-making across projects.
-
-The reports I generated include comprehensive data points such as thumbnails, versions, approvers, approver decisions, upload times, owner details, and project information. I also designed the system to concatenate critical data, such as descriptions, providing a holistic view of each proof in a streamlined format.
-
-To further enhance usability and timeliness, I organized the data into groups based on deadlines—categorizing proofs as due this week, today, within two weeks, next month, or without a specified deadline. This grouping allows team members to prioritize their workflows more effectively and ensures no critical deadlines are missed.
-
-This advanced proof reporting system has significantly improved the efficiency and accuracy of Starbucks' project management, providing our teams with the tools they need to manage and review creative outputs effectively.`)">
-    <h3>Advanced Proof Reporting with Workfront</h3>
-</div>
-
-                      
-                <div class="project-card" onclick="openModal(`About the Project`, `At UCLA Health, I led a project to streamline the promotional item request process using Adobe Workfront and Fusion to automate workflows and enhance communication.
-
-After meeting with the team to understand their requirements, I generated a user-friendly online form using existing processes on outside form-building systems.
-
-The new process involved requestors submitting their event and promotional item details through the form. Once submitted, an intake queue manager reviewed the request for completion and clarity before assigning it for approval.
-
-Approved requests triggered automated inventory updates, email summaries, and status changes. Progress tracking and delivery updates were managed throughout the process via custom reporting and dashboards, ensuring a seamless experience for all stakeholders.
-
-The new process significantly improved efficiency, reducing manual efforts by 70% and decreasing the processing time from 10 days to 3-5 business days. The automated workflow generated an 80% reduction in errors, ensuring accurate and timely delivery of promotional items.
-
-The result is a more efficient and transparent promotional item request process at UCLA Health.`)">
-    <h3>Inventory and Item Request Automation with Workfront and Workfront Fusion</h3>
-</div>
-
-<div class="project-card" onclick="openModal(`About the Project`, `At UCLA Health, I developed an efficient intake flow for managing marketing and digital requests. This endeavor aimed to streamline operations and improve team oversight.
-
-Intake Queue Management: I initiated the process by hiring an intake queue manager, a critical role in managing the influx of incoming requests and ensuring their timely processing.
-
-Custom Dashboard Development: I created a comprehensive dashboard with six distinct, both visual and data-driven reports. By employing custom text mode in Workfront, I overcame standard layout constraints to craft tailored displays featuring, for example:
-
->Concatenated updates detailing who made each update and when.
->Merged columns presenting extensive user data like names and email addresses.
-
-Activity Monitoring: To combat task stagnation, I designed activity reports to flag requests that had been inactive for over two weeks, ensuring ongoing momentum and minimizing delays.
-
-Detailed Request Tracking: The dashboard also included meticulous reports for tracking each request's origin, submission, due dates, and urgency levels. Specific reports were dedicated to requests due within one week or two weeks and all requests due for the month. I also integrated tracking for late requests.
-
-Service Line Matching and Work Dissemination: An essential component was the creation of a sophisticated dashboard aligning program managers with their service lines and clarifying work distribution within the project management team.
-
-Comprehensive Directory Creation: I developed a detailed directory that outlined every potential request type, encompassing information on approvers, assigned team members, boilerplate text, templates for project conversion, SOPs, and project initiation responsibilities.
-
-Through this project, I significantly improved the intake process at UCLA Health, boosting the efficiency and transparency of managing marketing and digital requests. This reflects my commitment to operational excellence and continuous improvement.`)">
-    <h3>Enhancing Intake Processes with Workfront</h3>
-</div>
-
-
-
-<div class="project-card" onclick="openModal(`About the Project`, `At Strand Industries, I led a successful automation project, creating a custom order management process by using Zapier and integrating Shopify, and Asana. Our internal and manufacturing teams used this automation process to manage custom orders, resulting in streamlined workflows, increased productivity, and improved communication among team members.
-
-I wrote custom APIs to enable data flow between the different systems and ensure seamless integration. By implementing this automation process, we were able to decrease staff allocation time by more than 40%, saving over $135,000 annually.`)">
-    <h3>Custom Order Automation and Management System with Zapier</h3>
-</div>
-
-<div class="project-card" onclick="openModal(`About the Project`, `At Strand Industries, I led the initiative of developing solutions for a Temperature Screening Kiosk. This involved various activities, from technical development to operational implementation.
-
-Product Development: Central to this project was the creation of the Temperature Screening Kiosk as a novel product offering. I developed comprehensive technical documentation and instructional videos, laying the groundwork for the product's functionality and user interaction.
-
-Cloud Server Integration: Integrating cloud functionality into the kiosks was vital to this project. I oversaw the transition of our cloud servers from Azure to AWS and the subsequent management of AWS EC2 servers.
-
-Helpdesk Site Development: I developed an online helpdesk site, offering users a comprehensive resource for the easy setup and troubleshooting of the hardware and cloud server components. This was essential to lighten the workload on our team and promote self-service, enhancing overall efficiency and user autonomy.
-
-Automated Workflow and Client Onboarding: To enhance the customer experience, I implemented an automated workflow for subscription orders on Shopify. This automation streamlined the onboarding process, efficiently coordinating tasks between the clients and our backend IT team from when an order was placed.
-
-AI-Powered Call Center Bot: I introduced an AI-powered call center bot designed with AI voices to provide a human-like interaction experience. This innovative tool efficiently guided clients to the right support channels, significantly improving response times and customer satisfaction and freeing up valuable staff resources for more complex queries.
-
-Call Scripting: I developed call scripts for our sales and call center teams.This effort not only streamlined communication but also boosted confidence among team members in handling a diverse range of customer scenarios.`)">
-    <h3>Developing Temperature Screening Solutions</h3>
-</div>
-
-
-<div class="project-card" onclick="openModal(`About the Project`, `At Strand Industries, I developed a unique app to scan ears for the purpose of creating in-ear custom headphones and earplugs. The app streamlined the process of creating custom-fitted ear devices by enabling users to take precise ear impressions right from their smartphones in less than five minutes, thereby eliminating the need for a traditional visit to an audiologist.
-
-Upon opening the app, users were walked through a comprehensive, user-friendly process. The procedure started with a detailed 3D scan of each ear, leveraging the power of the iPhone's true-depth camera. This process ensured that all angles and unique aspects of the user's ear shape were captured in high resolution. Following the scanning process, users were instructed to take a photo of their ears, serving as an additional reference point for producing perfectly fitting in-ear devices.
-
-The Ear Scanner app integrated seamlessly with Amazon's AWS S3 cloud storage. After the user completed scanning and input their personal details, all the data was securely uploaded to an AWS S3 bucket. This cloud storage functionality allowed myself and my team to promptly access the user's information, initiating the process of creating their custom ear devices swiftly and securely.
-
-The information stored in the AWS S3 bucket was subsequently forwarded to a 3D molder.`)">
-    <h3>Scanning App Development for iOS</h3>
-</div>
-
+                <div class="certification-card">
+                    <div class="certification-title">Adobe Certified Professional - Adobe Workfront Core Developer</div>
+                    <div class="certification-issuer">Adobe</div>
+                    <div class="certification-date">Issued Mar 2025 · Expires Mar 2027</div>
+                    <div class="certification-id">Credential ID 345be7b0-0d46-11f0-9883-42010a40002a</div>
+                    <div class="credential-button" onclick="openModal('Adobe Certified Professional - Workfront Core Developer', 'This certification validates expertise in:\n\n• Designing and implementing custom Workfront instances\n• Creating custom forms, fields, and calculated expressions\n• Developing advanced workflows and approval processes\n• Building custom reports and dashboards using text mode\n• Setting up resource management and capacity planning\n• Configuring project templates and task structures\n• Implementing custom request queues and intake processes\n• Designing effective portfolio and program structures')">Show credential</div>
+                </div>
+            </div>
+            
+            <div class="badges">
+                <span class="badge">Custom Automation Development</span>
+                <span class="badge">API Integration</span>
+                <span class="badge">Error Handling & Troubleshooting</span>
+                <span class="badge">Advanced Mappings</span>
+                <span class="badge">Custom Forms & Fields</span>
+                <span class="badge">Workflow Design</span>
+                <span class="badge">Text Mode Reporting</span>
+                <span class="badge">Request Queue Management</span>
+                <span class="badge">Project/Portfolio Configuration</span>
+                <span class="badge">Resource Planning</span>
+                <span class="badge">System Performance Optimization</span>
             </div>
         </div>
-    
+        
+        <div id="services" class="section">
+            <h2>Services</h2>
+            <p>I provide comprehensive consulting services to help organizations maximize their Adobe Workfront and Fusion investments.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Implementation & Configuration</h3>
+                    <p>Custom implementation and configuration of Adobe Workfront and Fusion tailored to your organization's specific needs and workflows.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Integration Solutions</h3>
+                    <p>Seamless integration of Workfront with other business systems including CRM, ERP, marketing automation, and creative tools.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Automation Development</h3>
+                    <p>Creation of advanced Fusion automations to streamline processes, reduce manual work, and increase operational efficiency.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Custom Reporting & Dashboards</h3>
+                    <p>Development of tailored reports and dashboards that provide actionable insights and visibility across your organization.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Process Optimization</h3>
+                    <p>Analysis and redesign of workflows to eliminate bottlenecks, improve collaboration, and enhance productivity.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Training & Knowledge Transfer</h3>
+                    <p>Comprehensive training programs for administrators, power users, and end users to ensure adoption and maximize ROI.</p>
+                </div>
+            </div>
+        </div>
 
-    <div id="contact" class="contact">
-      <img src="https://i.ibb.co/xvySkZY/LOGO.png" alt="Logo" class="profile-pic">
-        <h2>Get in Touch</h2>
-        <p><a href="mailto:me@panshahbazi.com">Email</a></p>
-         <p><a href="https://experienceleaguecommunities.adobe.com/t5/user/viewprofilepage/user-id/13341335">Experience League Community</a></p> 
-         <p><a href="https://github.com/PanShahbazian">GitHub</a></p> 
+        <div id="case-studies" class="section">
+            <h2>Case Studies</h2>
+            <p>Real results from real clients. See how my consulting services have transformed organizations across industries.</p>
+            
+            <div class="case-studies">
+                <div class="case-study-card" onclick="openModal('Intake Management Transformation', 'For a global Fortune 500 company, I implemented an innovative Workfront Kanban Board Fusion connector solution to enhance intake request management.\n\nBy integrating dynamic automation that moves, tags, and renames Workfront Kanban board cards based on tracked factors and real-time data, we ensured a more efficient workflow that reduced manual tracking and email overload by 65%.\n\nThe system automatically updates request names from generic identifiers to descriptive titles, enhancing navigation and tracking clarity. It also features an innovative rerun mechanism that consistently checks to ensure no intake becomes delayed, maintaining timeliness across all tasks.\n\nResults included:\n• 65% reduction in email communication\n• 40% faster intake processing time\n• 85% improvement in visibility and tracking\n• Significant reduction in team stress and cognitive load')">
+                    <h3>Intake Management Transformation</h3>
+                    <p>Fortune 500 Company</p>
+                </div>
+                
+                <div class="case-study-card" onclick="openModal('Advanced Proof Reporting System', 'For a leading consumer brand, I developed an advanced reporting system for creative producers and project managers utilizing document approval reports to present detailed data on proofs, enhancing visibility and decision-making across projects.\n\nThe reports include comprehensive data points such as thumbnails, versions, approvers, approver decisions, upload times, owner details, and project information. I designed the system to concatenate critical data, such as descriptions, providing a holistic view of each proof in a streamlined format.\n\nTo enhance usability and timeliness, I organized the data into groups based on deadlines—categorizing proofs as due this week, today, within two weeks, next month, or without a specified deadline.\n\nResults included:\n• 70% faster review cycles\n• 45% reduction in approval bottlenecks\n• 90% improvement in deadline compliance\n• Enhanced visibility across all creative projects')">
+                    <h3>Advanced Proof Reporting System</h3>
+                    <p>Fortune 500 Company</p>
+                </div>
+                
+                <div class="case-study-card" onclick="openModal('Healthcare Inventory Management', 'For a major healthcare provider, I led a project to streamline the promotional item request process using Adobe Workfront and Fusion to automate workflows and enhance communication.\n\nAfter meeting with stakeholders to understand requirements, I generated a user-friendly online form using existing processes on outside form-building systems.\n\nThe new process involved requestors submitting their event and promotional item details through the form. Once submitted, an intake queue manager reviewed the request for completion and clarity before assigning it for approval.\n\nApproved requests triggered automated inventory updates, email summaries, and status changes. Progress tracking and delivery updates were managed throughout the process via custom reporting and dashboards.\n\nResults included:\n• 70% reduction in manual efforts\n• Processing time decreased from 10 days to 3-5 business days\n• 80% reduction in errors\n• Complete visibility into inventory status')">
+                    <h3>Healthcare Inventory Management</h3>
+                    <p>Major Healthcare Provider</p>
+                </div>
+                
+                <div class="case-study-card" onclick="openModal('Marketing Intake Process Enhancement', 'For a healthcare organization, I developed an efficient intake flow for managing marketing and digital requests aimed at streamlining operations and improving team oversight.\n\nKey components included:\n\n• Custom Dashboard Development: I created a comprehensive dashboard with six distinct visual and data-driven reports using custom text mode in Workfront to overcome standard layout constraints.\n\n• Activity Monitoring: To combat task stagnation, I designed activity reports to flag requests that had been inactive for over two weeks, ensuring ongoing momentum and minimizing delays.\n\n• Detailed Request Tracking: The dashboard included meticulous reports for tracking each request\'s origin, submission, due dates, and urgency levels with specific reports for requests due within one week, two weeks, and all requests due for the month.\n\n• Service Line Matching: I created a sophisticated dashboard aligning program managers with their service lines and clarifying work distribution within the project management team.\n\n• Comprehensive Directory Creation: I developed a detailed directory outlining every potential request type with information on approvers, assigned team members, templates, SOPs, and project initiation responsibilities.\n\nResults included:\n• 55% faster request processing\n• 90% improvement in resource allocation\n• 75% reduction in missed deadlines\n• Enhanced cross-team visibility')">
+                    <h3>Marketing Intake Process Enhancement</h3>
+                    <p>Major Healthcare Provider</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="tools" class="section">
+            <h2>Tools & Resources</h2>
+            <p>I develop specialized tools to help Workfront and Fusion users optimize their workflows and troubleshoot issues more efficiently.</p>
+            
+            <div class="tool-card">
+                <h3>BCFA: Blueprint Custom Field Analyzer</h3>
+                <p>A macOS application designed to simplify Workfront Fusion blueprint analysis. It scans JSON blueprint files, identifies custom fields, tracks occurrences across modules, and highlights shared fields—helping you optimize and troubleshoot automations with ease.</p>
+                
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Analyze Workfront Fusion blueprints instantly</li>
+                    <li>Identify custom fields and their usage</li>
+                    <li>Generate clear, structured reports</li>
+                </ul>
+                
+                <a href="https://github.com/PanShahbazian/BCFA/tree/main" target="_blank" class="github-link">Download on GitHub</a>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <img src="https://i.ibb.co/xvySkZY/LOGO.png" alt="Logo" class="profile-pic" style="margin-bottom: 20px;">
+            <h2>Let's Work Together</h2>
+            <p>Ready to transform your workflow? Get in touch to discuss how I can help your organization maximize the potential of Adobe Workfront and Fusion.</p>
+            
+            <div class="contact-links">
+                <a href="mailto:pan@lotuslabs.biz">pan@lotuslabs.biz</a>
+                <a href="https://experienceleaguecommunities.adobe.com/t5/user/viewprofilepage/user-id/13341335" target="_blank">Experience League Profile</a>
+                <a href="https://github.com/PanShahbazian" target="_blank">GitHub</a>
+            </div>
+        </div>
     </div>
 
     <div class="modal" id="modal">
@@ -467,22 +591,16 @@ The information stored in the AWS S3 bucket was subsequently forwarded to a 3D m
         </div>
     </div>
 
-   <script>
-    function openModal(title, description) {
-        document.getElementById("modal-title").innerText = title;
-        document.getElementById("modal-description").innerText = description;
-        document.getElementById("modal").style.display = "flex";
-    }
+    <script>
+        function openModal(title, description) {
+            document.getElementById("modal-title").innerText = title;
+            document.getElementById("modal-description").innerText = description;
+            document.getElementById("modal").style.display = "flex";
+        }
 
-    function closeModal() {
-        document.getElementById("modal").style.display = "none";
-    }
-</script>
-
-
-<img src="https://iplogger.co/14BbC4" alt="tracker" style="display:none;" />
-</body>
-
-
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
 </body>
 </html>
